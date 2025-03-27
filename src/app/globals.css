@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ge dinarone";
+  src: url("../assets/fonts/GEDinarOne-Bold.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sora";
+  src: url("../assets/fonts/Sora-VariableFont_wght.ttf");
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Sora";
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+h1 {
+  @apply text-h1 max-lg:text-h1-m text-center;
+}
+h2 {
+  @apply text-h2 max-lg:text-h2-m;
+}
+h3 {
+  @apply text-h3 max-lg:text-h3-m;
+}
+h4 {
+  @apply text-h4 max-lg:text-h4-m;
+}
+h5 {
+  @apply text-h5 max-lg:text-h5-m;
+}
+section,
+footer {
+  @apply max-w-[1440px] mx-auto lg:px-desk-x sm:px-tab-x px-mob-x lg:py-desk-y py-tab-y;
+}
+
+.linear-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+.testimonier-card {
+  opacity: 0.4;
+  transition: all 2s;
+}
+.testimonier-card[data-selected="true"] {
+  opacity: 1;
+}
