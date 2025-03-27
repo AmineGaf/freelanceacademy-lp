@@ -1,6 +1,5 @@
 import React from "react";
 import RatingStar from "@/assets/icons/RatingStar";
-import { v4 as uuidv4 } from "uuid";
 import Video from "./ui/video";
 import { TESTIMONY_CONTENT } from "@/content/testimony";
 import Image from "next/image";

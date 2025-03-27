@@ -4,7 +4,6 @@ import TestimoniesBlock from "./testimonies-block";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { TESTIMONY_CONTENT } from "@/content/testimony";
 import TestimonierCard from "./testimonier-card";
-import {v4 as uuidv4} from 'uuid'
 
 const TestimonyScroll = () => {
   const containerRef = useRef<HTMLDivElement>(null);

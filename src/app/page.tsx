@@ -1,6 +1,5 @@
 import BlueGlowing from "@/components/blue-glowing";
 import AboutUs from "@/sections/about-us";
-import Content from "@/sections/content";
 import Faq from "@/sections/faq";
 import Features from "@/sections/features";
 import Guarantee from "@/sections/guarantee";
