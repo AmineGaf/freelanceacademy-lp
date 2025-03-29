@@ -23,7 +23,7 @@ const Carousel = ({ children, options }: PropType) => {
   return (
     <div className="embla flex flex-col gap-16" dir="rtl">
       <div className="embla__controls">
-        <div className="embla__dots flex-initial max-sm:flex-col">
+        <div className="embla__dots flex-initial">
           {testimonierArray.map((testimonier, index) => (
             <DotButton
               key={uuidv4()}
