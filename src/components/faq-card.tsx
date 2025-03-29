@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Card from "./ui/card";
+import Card from "@/components/ui/card";
 import { cn } from "@/libs/utils";
 
 interface IFAQCard {

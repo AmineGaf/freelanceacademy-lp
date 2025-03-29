@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./ui/card";
+import Card from "@/components/ui/card";
 import { cn } from "@/libs/utils";
 import Image, { StaticImageData } from "next/image";
 

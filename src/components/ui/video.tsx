@@ -2,8 +2,8 @@ import React, { ReactNode } from "react";
 
 import { cn } from "@/libs/utils";
 
-import Close from "@/assets/icons/Close";
-import PlayIcon from "@/assets/icons/PlayIcon";
+import Close from "@/components/ui/icons/Close";
+import PlayIcon from "@/components/ui/icons/PlayIcon";
 import {
   Dialog,
   DialogClose,
@@ -11,8 +11,8 @@ import {
   DialogContent,
   DialogTrigger,
   DialogVideo,
-} from "./dialog";
-import Card from "./card";
+} from "@/components/ui/dialog";
+import Card from "@/components/ui/card";
 
 interface IVideoPlayer {
   className?: string;

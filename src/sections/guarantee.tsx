@@ -1,7 +1,7 @@
-import Fast from "@/assets/icons/fast";
-import GuaranteeI from "@/assets/icons/guarantee-i";
-import Security from "@/assets/icons/security";
-import Updates from "@/assets/icons/updates";
+import Fast from "@/components/ui/icons/fast";
+import GuaranteeI from "@/components/ui/icons/guarantee-i";
+import Security from "@/components/ui/icons/security";
+import Updates from "@/components/ui/icons/updates";
 import React from "react";
 
 const Guarantee = () => {

@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import Card from "./ui/card";
+import Card from "@/components/ui/card";
 interface IAboutUsCard {
   icon: ReactNode;
   title: string;

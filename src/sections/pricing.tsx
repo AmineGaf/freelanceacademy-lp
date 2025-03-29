@@ -1,13 +1,13 @@
 import React from "react";
-import brandLogo from "@/assets/images/BrandLogo.webp";
+import brandLogo from "~/assets/images/BrandLogo.webp";
 import Image from "next/image";
 import { PRICING_CONTENT } from "@/content/pricing";
 import { v4 as uuidv4 } from "uuid";
 import PricingVideo from "@/components/pricing-video";
-import glowingImage from "@/assets/nav-glowing.png";
+import glowingImage from "~/assets/nav-glowing.png";
 import Price from "@/components/price";
 import TitleTicket from "@/components/title-ticket";
-import PricingStar from "@/assets/icons/pricing-star";
+import PricingStar from "@/components/ui/icons/pricing-star";
 import MainCta from "@/components/main-cta";
 import GuaranteeOffer from "@/components/guarantee-offer";
 
@@ -75,7 +75,7 @@ const Pricing = () => {
               <div className="flex flex-col gap-4 items-start">
                 <a
                   className="flex gap-4 max-lg:w-full max-lg:flex-col"
-                  href="https://wa.me/21693912041?text=عسلامة قصي، نحب نعرف أكثر معلومات عل دورات متاعكم ؟"
+                  href="https://wa.me/21693912041?text=عسلامة، نحب نسجل في الأكاديمي "
                 >
                   <MainCta />
                 </a>

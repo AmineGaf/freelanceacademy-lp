@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import mainLogo from "@/assets/images/BrandLogo.webp";
+import mainLogo from "~/assets/images/BrandLogo.webp";
 import Link from "next/link";
 
 const Nav = () => {

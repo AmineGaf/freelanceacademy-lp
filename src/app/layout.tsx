@@ -1,4 +1,4 @@
-import PHProvider from "./provider";
+import PHProvider from "@/app/provider";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -9,7 +9,7 @@ import NavGlowing from "@/components/nav-glowing";
 import FooterGlowing from "@/components/footer-glowing";
 
 const sora = localFont({
-  src: "../assets/fonts/Sora-VariableFont_wght.ttf",
+  src: "../../public/assets/fonts/Sora-VariableFont_wght.ttf",
   variable: "--font-sora",
   weight: "100 700 900",
 });

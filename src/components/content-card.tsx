@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "./ui/card";
+import Card from "@/components/ui/card";
 import { cn } from "@/libs/utils";
-import ContentCheck from "@/assets/icons/content-check";
+import ContentCheck from "@/components/ui/icons/content-check";
 
 const ContentCard = () => {
   return (

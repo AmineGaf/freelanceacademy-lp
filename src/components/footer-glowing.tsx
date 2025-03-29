@@ -1,5 +1,5 @@
 import React from 'react'
-import glowingEffect from "@/assets/footer-glowing.png"
+import glowingEffect from "~/assets/footer-glowing.png"
 import Image from "next/image"
 
 

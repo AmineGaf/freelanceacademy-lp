@@ -2,9 +2,9 @@ import React, { ReactNode } from "react";
 import { EmblaOptionsType } from "embla-carousel";
 
 import useEmblaCarousel from "embla-carousel-react";
-import { DotButton, useDotButton } from "./carousel-controls";
+import { DotButton, useDotButton } from "@/components/embla-carousel/carousel-controls";
 import { TESTIMONY_CONTENT } from "@/content/testimony";
-import TestimonierCard from "../testimonier-card";
+import TestimonierCard from "@/components/testimonier-card";
 import {v4 as uuidv4} from 'uuid'
 
 type PropType = {
@@ -36,7 +36,7 @@ const Carousel = ({ children, options }: PropType) => {
                 avatar={testimonier.avatar}
                 name={testimonier.name}
                 age={testimonier.age}
-                income={testimonier.age}
+                income={testimonier.income}
               />
             </DotButton>
           ))}

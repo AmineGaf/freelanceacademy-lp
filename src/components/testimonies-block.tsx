@@ -1,6 +1,6 @@
 import React from "react";
-import RatingStar from "@/assets/icons/RatingStar";
-import Video from "./ui/video";
+import RatingStar from "@/components/ui/icons/RatingStar";
+import Video from "@/components/ui/video";
 import { TESTIMONY_CONTENT } from "@/content/testimony";
 import Image from "next/image";
 const TestimoniesBlock = () => {

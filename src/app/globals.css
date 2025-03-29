@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: "ge dinarone";
-  src: url("../assets/fonts/GEDinarOne-Bold.ttf");
+  src: url("../../public/assets/fonts/GEDinarOne-Bold.ttf");
   font-display: swap;
 }
 
 @font-face {
   font-family: "Sora";
-  src: url("../assets/fonts/Sora-VariableFont_wght.ttf");
+  src: url("../../public/assets/fonts/Sora-VariableFont_wght.ttf");
   font-display: swap;
 }
 

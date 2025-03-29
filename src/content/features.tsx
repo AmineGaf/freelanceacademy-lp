@@ -1,9 +1,9 @@
 import { IAboutUsCard } from "@/components/feature-card";
 import { ReactNode } from "react";
-import support from "@/assets/images/features-section/support.png";
-import security from "@/assets/images/features-section/security.png";
-import live from "@/assets/images/features-section/live.png";
-import safe from "@/assets/images/features-section/safe.png";
+import support from "~/assets/images/features-section/support.png";
+import security from "~/assets/images/features-section/security.png";
+import live from "~/assets/images/features-section/live.png";
+import safe from "~/assets/images/features-section/safe.png";
 
 interface IFeaturesContent {
   ticket: ReactNode;

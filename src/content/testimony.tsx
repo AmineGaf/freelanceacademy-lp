@@ -1,11 +1,11 @@
-import testimonierOne from "@/assets/images/testimony-section/Seifeddine Chettaoui.jpg";
-import thumbnailOne from "@/assets/images/testimony-section/Seifeddine Chettaoui Thumbnail.png";
-import testimonierTwo from "@/assets/images/testimony-section/Taki.png";
-import thumbnailTwo from "@/assets/images/testimony-section/Taki Thumbnail.png";
-import testimonierThree from "@/assets/images/testimony-section/Intidhar Ben Mrad.png";
-import thumbnailThree from "@/assets/images/testimony-section/Intidhar Ben Mrad Thumbnail.png";
-import testimonierFour from "@/assets/images/testimony-section/Amine.png";
-import thumbnailFour from "@/assets/images/testimony-section/Amine Thumbnail.png"
+import testimonierOne from "~/assets/images/testimony-section/Seifeddine Chettaoui.jpg";
+import thumbnailOne from "~/assets/images/testimony-section/Seifeddine Chettaoui Thumbnail.png";
+import testimonierTwo from "~/assets/images/testimony-section/Taki.png";
+import thumbnailTwo from "~/assets/images/testimony-section/Taki Thumbnail.png";
+import testimonierThree from "~/assets/images/testimony-section/Intidhar Ben Mrad.png";
+import thumbnailThree from "~/assets/images/testimony-section/Intidhar Ben Mrad Thumbnail.png";
+import testimonierFour from "~/assets/images/testimony-section/Amine.png";
+import thumbnailFour from "~/assets/images/testimony-section/Amine Thumbnail.png";
 import {
   StaticImageData,
   StaticImport,
@@ -31,8 +31,7 @@ export interface ITestimonier {
 export const TESTIMONY_CONTENT = {
   ticket: "Testimonials",
   title: "تسمعش كلامنا، اسمع كلام الشبيبة لي بدت",
-  subtitle:
-    "برنامج Agency Navigator مقسم إلى 6 مراحل. يمكنك رؤية ما يوجد في كل مرحلة أدناه.عند الانضمام اليوم، ستحصل أيضًا على وصول إلى برنامجين إضافيين بقيمة 1500 دولار لكل منهما، مجانًا.",
+  subtitle: "",
   testimony: {
     users: [
       {

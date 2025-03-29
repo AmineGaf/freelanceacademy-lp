@@ -1,5 +1,5 @@
 import React from 'react'
-import glowingEffect from "@/assets/nav-glowing.webp"
+import glowingEffect from "~/assets/nav-glowing.webp"
 import Image from "next/image"
 const NavGlowing = () => {
   return (

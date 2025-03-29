@@ -1,4 +1,4 @@
-import type { IGlobalSvgProps } from "./svgTypes";
+import type { IGlobalSvgProps } from "@/components/ui/icons/svgTypes";
 
 
 const Facebook = ({ width, height }: IGlobalSvgProps) => {

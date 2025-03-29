@@ -1,4 +1,4 @@
-import GuardShield from "@/assets/icons/GuardShield";
+import GuardShield from "@/components/ui/icons/GuardShield";
 import { SHARED_CONTENT } from "@/content/shared";
 import React from "react";
 

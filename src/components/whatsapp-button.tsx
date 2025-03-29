@@ -1,7 +1,7 @@
 import React from "react";
 import { SHARED_CONTENT } from "@/content/shared";
-import Whatsapp from "@/assets/icons/Whatsap";
-import Button from "./ui/button";
+import Whatsapp from "@/components/ui/icons/Whatsap";
+import Button from "@/components/ui/button";
 import { cn } from "@/libs/utils";
 
 const WhatsappButton = ({ className }: { className?: string }) => {

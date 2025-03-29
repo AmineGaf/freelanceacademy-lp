@@ -1,12 +1,12 @@
 import React from "react";
-import pricingThumnail from "@/assets/images/pricing-section/Help.jpg";
+import pricingThumnail from "~/assets/images/pricing-section/Help.jpg";
 import Image from "next/image";
-import PricingCheck from "@/assets/icons/PricingCheck";
+import PricingCheck from "@/components/ui/icons/PricingCheck";
 import { PRICING_CONTENT } from "@/content/pricing";
 import { v4 as uuidv4 } from "uuid";
-import Video from "./ui/video";
-import Card from "./ui/card";
-import WhatsappButton from "./whatsapp-button";
+import Video from "@/components/ui/video";
+import Card from "@/components/ui/card";
+import WhatsappButton from "@/components/whatsapp-button";
 
 const PricingVideo = () => {
   const videoContent = PRICING_CONTENT.video;

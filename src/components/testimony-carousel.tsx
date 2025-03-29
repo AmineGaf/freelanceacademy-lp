@@ -2,9 +2,9 @@
 import React from "react";
 import { TESTIMONY_CONTENT } from "@/content/testimony";
 import { EmblaOptionsType } from "embla-carousel";
-import Carousel from "./embla-carousel/carousel";
-import RatingStar from "@/assets/icons/RatingStar";
-import Video from "./ui/video";
+import Carousel from "@/components/embla-carousel/carousel";
+import RatingStar from "@/components/ui/icons/RatingStar";
+import Video from "@/components/ui/video";
 import Image from 'next/image'
 import {v4 as uuidv4} from 'uuid'
 

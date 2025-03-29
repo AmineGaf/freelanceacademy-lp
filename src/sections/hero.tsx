@@ -2,7 +2,7 @@ import Video from "@/components/ui/video";
 import { HERO_CONTENT } from "@/content/hero";
 import React from "react";
 import Image from "next/image";
-import thumbnail from "@/assets/images/hero-section/thumbnail.png";
+import thumbnail from "~/assets/images/hero-section/thumbnail.png";
 import MainCta from "@/components/main-cta";
 
 const Hero = () => {

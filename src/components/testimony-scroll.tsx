@@ -1,9 +1,9 @@
 "use client";
 import React, { useRef, useState } from "react";
-import TestimoniesBlock from "./testimonies-block";
+import TestimoniesBlock from "@/components/testimonies-block";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 import { TESTIMONY_CONTENT } from "@/content/testimony";
-import TestimonierCard from "./testimonier-card";
+import TestimonierCard from "@/components/testimonier-card";
 
 const TestimonyScroll = () => {
   const containerRef = useRef<HTMLDivElement>(null);
