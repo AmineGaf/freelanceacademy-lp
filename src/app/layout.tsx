@@ -25,8 +25,45 @@ const sora = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Freelance Academy",
-  description: "Freelance Academy Website",
+  title: "Freelance Academy - تعلم الفريلانس من الصفر",
+  description:
+    "أكاديمية الفريلانس - تعلم مهارات الفريلانس وابدأ عملك الخاص. دورات شاملة في البرمجة، التصميم، التسويق الرقمي والمزيد.",
+  keywords: "فريلانس، عمل حر، برمجة، تصميم، تسويق رقمي، دورات تعليمية",
+  authors: [{ name: "Freelance Academy" }],
+  creator: "Freelance Academy",
+  publisher: "Freelance Academy",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL("https://www.freelanceacademy.tn"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "ar_SA",
+    url: "https://www.freelanceacademy.tn/",
+    title: "Freelance Academy - تعلم الفريلانس من الصفر",
+    description:
+      "أكاديمية الفريلانس - تعلم مهارات الفريلانس وابدأ عملك الخاص. دورات شاملة في البرمجة، التصميم، التسويق الرقمي والمزيد.",
+    siteName: "Freelance Academy",
+    images: [
+      {
+        url: "/assets/images/hero-section/thumbnail.png",
+        width: 1200,
+        height: 630,
+        alt: "Freelance Academy - تعلم الفريلانس من الصفر",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Freelance Academy - تعلم الفريلانس من الصفر",
+    description: "أكاديمية الفريلانس - تعلم مهارات الفريلانس وابدأ عملك الخاص",
+    images: ["/assets/images/hero-section/thumbnail.png"],
+  },
   icons: {
     icon: [
       {
