@@ -15,12 +15,12 @@ const Pricing = () => {
   const mainContent = PRICING_CONTENT.main;
   return (
     <section className="section relative flex flex-col gap-14" id="pricing">
-      <div className="flex flex-col gap-4 items-center mx-auto">
+      <div className="flex flex-col gap-4 items-center mx-auto text-center">
         <TitleTicket content={PRICING_CONTENT.ticket} />
-        <h2 className="linear-text bg-text text-center">
+        <h2 className="linear-text bg-text text-center font-gedinarone text-h2 max-lg:text-h2-m">
           {PRICING_CONTENT.title}
         </h2>
-        <p className="text-light-blue-w1 text-lg text-center">
+        <p className="text-light-blue-w1 text-h5 max-lg:text-h5-m font-gedinarone text-center">
           {PRICING_CONTENT.subtitle}
         </p>
       </div>
@@ -50,7 +50,7 @@ const Pricing = () => {
                   height={38}
                 />
               </div>
-              <h1 className="text-grey-w0 text-right font-geDinarone text-h2">
+              <h1 className="text-grey-w0 text-right font-gedinarone text-h2">
                 {mainContent.title}
               </h1>
             </div>

@@ -6,9 +6,15 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/content/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/animations/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sora: ["var(--font-sora)", "sans-serif"],
+        gedinarone: ["var(--font-gedinarone)", "sans-serif"],
+      },
       colors: {
         background: "#02070D",
         "black-w0": "#101636",
@@ -19,10 +25,14 @@ export default {
         "blue-w3": "#2749A2",
         "dark-blue": "#011E87",
         grey: "#9EA3B7",
-        'grey-w1': '#C2CAD6',
+        "grey-w1": "#C2CAD6",
         "light-blue-w1": "#BBCDE8",
       },
       backgroundImage: {
+        "progress-linear":
+          "linear-gradient(131deg,rgba(255, 255, 255, 0.08) 26.91%,rgba(7, 109, 236, 0.6) 73.09%)",
+        "progress-highlight":
+          "linear-gradient(180deg,rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.16) 50%,rgba(255, 255, 255, 0) 100%)",
         "gradient-a":
           "linear-gradient(to bottom, rgba(246,246,246,0.965) 0%, rgba(170,170,170,0.667) 100%)",
         "linear-stroke":
@@ -47,8 +57,9 @@ export default {
         "pricing-star":
           "radial-gradient(50% 50% at 50% 50%, #061023 0%, #16264F 100%)",
       },
-
       boxShadow: {
+        progress:
+          "0px 0px 64px 0px rgba(7, 109, 236, 0.02),0px 0px 32px 0px rgba(7, 109, 236, 0.04),0px 0px 16px 0px rgba(7, 109, 236, 0.08),0px 0px 8px 0px rgba(7, 109, 236, 0.12),0px 0px 4px 0px rgba(7, 109, 236, 0.16),0px 0px 6px 0px rgba(7, 109, 236, 0.24)",
         card: "-8px 8px 0px 0px #242425",
         "border-top": "0px -2px 0px 0px rgba(255, 255, 255, 0.32);",
         "section-border": "0px -4px 0px 0px rgba(1, 46, 99 , .75)",

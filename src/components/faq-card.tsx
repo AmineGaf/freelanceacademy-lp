@@ -30,7 +30,7 @@ const FaqCard = ({ question, answer }: IFAQCard) => {
           )}
         >
           <div className="flex justify-between items-center">
-            <h5 className="font-geDinarone text-grey-w0">{question}</h5>
+            <h5 className="font-gedinarone text-grey-w0">{question}</h5>
             <div className="relative w-6 h-6">
               <span className="block top-1/2 left-1/2 absolute bg-grey w-5 h-[2px] -translate-x-1/2 -translate-y-1/2" />
               <span

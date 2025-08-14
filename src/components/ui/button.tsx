@@ -12,16 +12,15 @@ interface IButton {
 }
 
 const buttonVariants = cva(
-  "relative flex justify-center items-center gap-1 px-6 py-3 rounded-full max-lg:w-full h-[54px] hover:opacity-75 text-lg font-bold font-geDinarone text-black/85 leading-6",
+  "relative flex justify-center items-center gap-1 px-6 py-3 rounded-full max-lg:w-full h-[54px] hover:opacity-75 text-lg font-bold font-gedinarone text-black/85 leading-6",
   {
     variants: {
       variant: {
-        default:
-          "bg-Background bg-white-w1",
+        default: "bg-Background bg-white-w1",
         outline:
-          "border-solid border-[1px] border-white/30 !bg-white/15 text-white/70 font-sora font-normal leading-[30px] px-6",
+          "border-solid border-[1px] border-white/30 !bg-white/15 text-white/70 font-gedinarone font-normal leading-[30px] px-6",
         gradient: "bg-linear-button",
-        cta: "px-8 py-8 text-white border border-blue bg-radical-button w-fit rounded-[0.875rem] mx-auto"
+        cta: "px-8 py-8 text-white border border-blue bg-radical-button w-fit rounded-[0.875rem] mx-auto",
       },
     },
     defaultVariants: {

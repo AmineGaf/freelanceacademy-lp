@@ -8,8 +8,8 @@ import MainCta from "@/components/main-cta";
 const Content = () => {
   return (
     <section className="relative flex flex-col gap-24">
-      <div className="flex flex-col gap-4 items-center max-w-[41.5625rem] mx-auto">
-        <h2 className="flex flex-col">
+      <div className="flex flex-col gap-4 items-center max-w-[41.5625rem] mx-auto text-center">
+        <h2 className="flex flex-col font-gedinarone text-h2 max-lg:text-h2-m">
           <span className="linear-text bg-text text-center">
             {CONTENT_SECTION_CONTENT.title.top}
           </span>

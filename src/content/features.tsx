@@ -12,11 +12,7 @@ interface IFeaturesContent {
 }
 
 export const FEATURES_CONTENT: IFeaturesContent = {
-  ticket: (
-    <>
-      Join <span>The Waitlist</span> Today
-    </>
-  ),
+  ticket: <span>Join The Waitlist Today</span>,
   title: {
     top: <>أحسن اختيار كان تحب</>,
     sub: " تتعلم Freelance",
@@ -24,7 +20,11 @@ export const FEATURES_CONTENT: IFeaturesContent = {
   cards: [
     {
       image: support,
-      title: " دعم 24/7 على الواتساب:",
+      title: (
+        <>
+          دعم <span className="font-sora">24/7</span> على الواتساب:
+        </>
+      ),
       desc: "عندك مشكل؟ عندك سؤال؟ الفريق موجود بالنهار و الليل باش يعاونك.",
       grid: "col-span-2",
     },
@@ -36,7 +36,11 @@ export const FEATURES_CONTENT: IFeaturesContent = {
     },
     {
       image: safe,
-      title: "6 دورات بسعر واحد:",
+      title: (
+        <>
+          <span className="font-sora">6</span> دورات بسعر واحد:
+        </>
+      ),
       desc: "خريطة طريق كاملة تغطّي كل شي من المبتدئ حتى الاستراتيجيات المتقدّمة و زيد عليها جلسات شهرية و محتوى جديد بصفة مستمرّة.",
       grid: "col-span-3",
     },

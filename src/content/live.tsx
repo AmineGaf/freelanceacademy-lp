@@ -1,7 +1,7 @@
 export const LIVE_SECTION = {
   title: (
     <>
-      <span className="font-sora">Freelance Academy</span> شنوة
+      <span className="font-gedinarone">Freelance Academy</span> شنوة
     </>
   ),
   subtitle: (

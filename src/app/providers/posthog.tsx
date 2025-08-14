@@ -7,13 +7,11 @@ import dynamic from "next/dynamic";
 
 const PixelTracker = dynamic(() => import("./meta"), { ssr: false });
 
-if (typeof window !== "undefined") {
-  posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY || "", {
-    api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
-  });
-}
-
-
+// if (typeof window !== "undefined") {
+//   posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY || "", {
+//     api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
+//   });
+// }
 
 export default function PHProvider({
   children,
@@ -24,13 +22,12 @@ export default function PHProvider({
 
   return (
     <div>
-      
-    <PostHogProvider client={posthog}>
-      <QueryClientProvider client={queryClient}>
-        <PixelTracker />
-        {children}
-      </QueryClientProvider>
-    </PostHogProvider>
+      <PostHogProvider client={posthog}>
+        <QueryClientProvider client={queryClient}>
+          <PixelTracker />
+          {children}
+        </QueryClientProvider>
+      </PostHogProvider>
     </div>
   );
 }

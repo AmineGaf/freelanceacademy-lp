@@ -10,21 +10,22 @@ import {
   StaticImageData,
   StaticImport,
 } from "next/dist/shared/lib/get-img-props";
+import { ReactNode } from "react";
 
 export interface ITestimonyDetails {
   thumbnail?: string | StaticImport;
-  age?: number;
-  income?: number;
+  age?: ReactNode;
+  income?: ReactNode;
   rating?: number;
-  quote?: string;
+  quote?: ReactNode;
   vidTitle?: string;
   videoCode?: string;
 }
 export interface ITestimonier {
   avatar: StaticImageData;
   name: string;
-  age: number;
-  income: number;
+  age: ReactNode;
+  income: ReactNode;
   selected?: boolean;
 }
 
@@ -37,26 +38,26 @@ export const TESTIMONY_CONTENT = {
       {
         avatar: testimonierOne,
         name: "سيف الدين الشتاوي",
-        age: 18,
-        income: 3000,
+        age: <span className="font-sora">18</span>,
+        income: <span className="font-sora">3000</span>,
       },
       {
         avatar: testimonierTwo,
         name: "تقي الزيتوني",
-        age: 20,
-        income: 2000,
+        age: <span className="font-sora">20</span>,
+        income: <span className="font-sora">2000</span>,
       },
       {
         avatar: testimonierThree,
         name: "إنتظار بن مراد",
-        age: 27,
-        income: 1000,
+        age: <span className="font-sora">27</span>,
+        income: <span className="font-sora">1000</span>,
       },
       {
         avatar: testimonierFour,
         name: "محمد أمين",
-        age: 20,
-        income: 1000,
+        age: <span className="font-sora">20</span>,
+        income: <span className="font-sora">1000</span>,
       },
     ] as ITestimonier[],
     details: [
@@ -84,7 +85,7 @@ export const TESTIMONY_CONTENT = {
         thumbnail: thumbnailFour,
         vidTitle: "بش يعلمك حاجات حتى و انت مكش فايق اللي تتعلم فاهم",
         rating: 5,
-        videoCode: '67e57ca1403562dbea691366'
+        videoCode: "67e57ca1403562dbea691366",
       },
     ] as ITestimonyDetails[],
   },

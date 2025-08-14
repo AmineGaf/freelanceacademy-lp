@@ -1,16 +1,16 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import Card from "@/components/ui/card";
 import { cn } from "@/libs/utils";
 import Image, { StaticImageData } from "next/image";
 
 export interface IAboutUsCard {
   image: StaticImageData;
-  title: string;
+  title: ReactNode;
   desc: string;
   grid: "col-span-2" | "col-span-3" | "col-span-4";
 }
 
-const FeatureCard = ({ image,title, desc, grid }: IAboutUsCard) => {
+const FeatureCard = ({ image, title, desc, grid }: IAboutUsCard) => {
   return (
     <Card
       className={cn(

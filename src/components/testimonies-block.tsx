@@ -35,7 +35,7 @@ const TestimoniesBlock = () => {
                 </Video>
               </>
             ) : (
-              <p dir="ltr" className="font-sora text-grey-w0 text-h3">
+              <p dir="ltr" className="font-gedinarone text-grey-w0 text-h3">
                 {testimonies.quote}
               </p>
             )}

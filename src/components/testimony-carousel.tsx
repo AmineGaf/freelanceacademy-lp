@@ -5,11 +5,15 @@ import { EmblaOptionsType } from "embla-carousel";
 import Carousel from "@/components/embla-carousel/carousel";
 import RatingStar from "@/components/ui/icons/RatingStar";
 import Video from "@/components/ui/video";
-import Image from 'next/image'
-import {v4 as uuidv4} from 'uuid'
+import Image from "next/image";
+import { v4 as uuidv4 } from "uuid";
 
 const TestimonyCarousel = () => {
-  const OPTIONS: EmblaOptionsType = { loop: true, align: "start" , direction: 'rtl' };
+  const OPTIONS: EmblaOptionsType = {
+    loop: true,
+    align: "start",
+    direction: "rtl",
+  };
   const testimoniesArray = TESTIMONY_CONTENT.testimony.details;
   return (
     <div>
@@ -27,10 +31,7 @@ const TestimonyCarousel = () => {
                   <span className="text-grey-w0 text-h3 text-left">
                     {testimonies.vidTitle}
                   </span>
-                  <Video
-                    videoCode={testimonies.videoCode}
-                    className="w-full"
-                  >
+                  <Video videoCode={testimonies.videoCode} className="w-full">
                     <Image
                       src={testimonies.thumbnail}
                       alt="thumbnail"
@@ -42,12 +43,11 @@ const TestimonyCarousel = () => {
                   </Video>
                 </>
               ) : (
-                <p dir="ltr" className="font-sora text-grey-w0 text-h3">
+                <p dir="ltr" className="font-gedinarone text-grey-w0 text-h3">
                   {testimonies.quote}
                 </p>
               )}
             </div>
-
           </div>
         ))}
       </Carousel>

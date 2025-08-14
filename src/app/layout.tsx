@@ -7,11 +7,20 @@ import Nav from "@/sections/nav";
 import Footer from "@/sections/footer";
 import NavGlowing from "@/components/nav-glowing";
 import FooterGlowing from "@/components/footer-glowing";
+import DigitNormalizer from "@/app/providers/digits";
+
+const gedinarone = localFont({
+  src: "../../public/assets/fonts/gedinarone.ttf",
+  variable: "--font-gedinarone",
+  weight: "700",
+  display: "swap",
+});
 
 const sora = localFont({
-  src: "../../public/assets/fonts/Sora-VariableFont_wght.ttf",
+  src: "../../public/assets/fonts/sora.ttf",
   variable: "--font-sora",
-  weight: "100 700 900",
+  weight: "100 400 700 900",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -51,12 +60,16 @@ export default function RootLayout({
             width="1"
             style={{ display: "none" }}
             src="https://www.facebook.com/tr?id=668538532566082&ev=
-            PageView&noscript=1"/>
+            PageView&noscript=1"
+          />
         </noscript>
         {/* End Meta Pixel Code */}
       </head>
-      <body className={`${sora.style} antialiased bg-background relative`}>
+      <body
+        className={`${gedinarone.variable} ${sora.variable} antialiased bg-background relative`}
+      >
         <PHProvider>
+          <DigitNormalizer />
           <NavGlowing />
           <Nav />
           {children}

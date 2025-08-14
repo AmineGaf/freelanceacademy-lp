@@ -5,14 +5,25 @@ export const PRICING_CONTENT = {
     "سجّل اليوم وضمّن أفضل خارطة طريق للفريلانس مدى الحياة. و هذا الكل بجزء صغير من قيمتها الحقيقية",
   main: {
     title: "شنوة باش تاخو",
-    from: "من 1037 د.ت",
-    to: "297 د.ت",
+    from: (
+      <>
+        من <span className="font-sora">1037</span> د.ت
+      </>
+    ),
+    to: (
+      <>
+        <span className="font-sora">297</span> د.ت
+      </>
+    ),
     items: [
       {
         content: (
           <>
             <b>6 دورات معمّقة:</b> باش تولّي محترف في الفريلانس من الصفر حتى
-            المستوى المتقدّم. <span>(القيمة: 1,250DT)</span>
+            المستوى المتقدّم.{" "}
+            <span>
+              (القيمة: <span className="font-sora">1,250</span>DT)
+            </span>
           </>
         ),
       },
@@ -20,7 +31,9 @@ export const PRICING_CONTENT = {
         content: (
           <>
             <b>دعم واتساب 24/7 من الخبراء:</b>مساعدة حقيقية في أي وقت.
-            <span>(القيمة: 750DT/السنة)</span>
+            <span>
+              (القيمة: <span className="font-sora">750</span>DT/السنة)
+            </span>
           </>
         ),
       },
@@ -28,7 +41,9 @@ export const PRICING_CONTENT = {
         content: (
           <>
             <b>جلسات شهرية مع الخبراء:</b> تعلّم مستمر و تطوير دائم.
-            <span>(القيمة: 1,000DT/السنة)</span>
+            <span>
+              (القيمة: <span className="font-sora">1,000</span>DT/السنة)
+            </span>
           </>
         ),
       },
@@ -36,7 +51,10 @@ export const PRICING_CONTENT = {
         content: (
           <>
             <b>نفاذ لكل المحتوى المستقبلي:</b>باش تبقى ديما مواكب للجديد.
-            <span> (القيمة: مستمرة)</span>
+            <span>
+              {" "}
+              (القيمة: <span className="font-sora">مستمرة</span>)
+            </span>
           </>
         ),
       },

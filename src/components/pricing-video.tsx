@@ -12,9 +12,9 @@ const PricingVideo = () => {
   const videoContent = PRICING_CONTENT.video;
 
   return (
-    <Card className=" px-4 py-12 rounded-rounded w-full lg:max-w-[396px] flex flex-col gap-8 max-lg:w-full bg-white/5 shadow-features border-2 border-white/15">
+    <Card className="px-4 py-12 rounded-rounded w-full lg:max-w-[396px] flex flex-col gap-8 max-lg:w-full shadow-features border-2 border-white/15">
       <div>
-        <h3 className="text-white font-geDinarone">{videoContent.title}</h3>
+        <h3 className="text-white font-gedinarone">{videoContent.title}</h3>
         <p className="text-grey-w1">{videoContent.sub}</p>
       </div>
       <div className="flex flex-col gap-6 grayscale">
@@ -36,7 +36,7 @@ const PricingVideo = () => {
             return (
               <li className="flex items-start gap-3" key={uuidv4()}>
                 <PricingCheck />
-                <h5 className="  font-normal antialiased font-sora text-center !text-grey-w1 text-md md:text-xl max-md:text-right">
+                <h5 className="  font-normal antialiased font-gedinarone text-center !text-grey-w1 text-md md:text-xl max-md:text-right">
                   {element.content}
                 </h5>
               </li>
