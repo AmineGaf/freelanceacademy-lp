@@ -1,5 +1,4 @@
-import type { IGlobalSvgProps } from "@/components/ui/icons/svgTypes";
-
+import type { IGlobalSvgProps } from "@components/ui/icons/svgTypes";
 
 const Twitter = ({ width, height }: IGlobalSvgProps) => {
   return (

@@ -1,5 +1,4 @@
-import type { IGlobalSvgProps } from "@/components/ui/icons/svgTypes";
-
+import type { IGlobalSvgProps } from "@components/ui/icons/svgTypes";
 
 const CheckSign = ({ width, height, className }: IGlobalSvgProps) => {
   return (

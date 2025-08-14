@@ -1,18 +1,18 @@
 import React, { ReactNode } from "react";
 
-import { cn } from "@/libs/utils";
+import { cn } from "@libs/utils";
 
-import Close from "@/components/ui/icons/Close";
-import PlayIcon from "@/components/ui/icons/PlayIcon";
+import Close from "@components/ui/icons/Close";
+import PlayIcon from "@components/ui/icons/PlayIcon";
 import {
   Dialog,
   DialogClose,
   DialogContainer,
   DialogContent,
-  DialogTrigger,
   DialogVideo,
-} from "@/components/ui/dialog";
-import Card from "@/components/ui/card";
+  DialogTrigger,
+} from "@components/ui/dialog";
+import Card from "@components/ui/card";
 
 interface IVideoPlayer {
   className?: string;

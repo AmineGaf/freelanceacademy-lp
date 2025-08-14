@@ -27,19 +27,19 @@ body {
 }
 
 h1 {
-  @apply text-h1 max-lg:text-h1-m text-center;
+  @apply text-h1 max-lg:text-h3 text-center;
 }
 h2 {
-  @apply text-h2 max-lg:text-h2-m;
+  @apply text-h2 max-lg:text-h3;
 }
 h3 {
-  @apply text-h3 max-lg:text-h3-m;
+  @apply text-h3 max-lg:text-h4;
 }
 h4 {
-  @apply text-h4 max-lg:text-h4-m;
+  @apply text-h4 max-lg:text-h5;
 }
 h5 {
-  @apply text-h5 max-lg:text-h5-m;
+  @apply text-h5 max-lg:text-body-lg;
 }
 section,
 footer {

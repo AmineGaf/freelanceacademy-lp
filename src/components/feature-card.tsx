@@ -1,7 +1,9 @@
 import React, { ReactNode } from "react";
-import Card from "@/components/ui/card";
-import { cn } from "@/libs/utils";
 import Image, { StaticImageData } from "next/image";
+
+import Card from "@components/ui/card";
+
+import { cn } from "@libs/utils";
 
 export interface IAboutUsCard {
   image: StaticImageData;
@@ -22,7 +24,7 @@ const FeatureCard = ({ image, title, desc, grid }: IAboutUsCard) => {
         <Image height={400} width={600} src={image} alt={""} />
       </div>
       <h4>{title}</h4>
-      <p className="text-center text-grey">{desc}</p>
+      <p className="text-center text-grey font-normal">{desc}</p>
     </Card>
   );
 };

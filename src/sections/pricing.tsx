@@ -1,15 +1,18 @@
 import React from "react";
-import brandLogo from "~/assets/images/BrandLogo.webp";
 import Image from "next/image";
-import { PRICING_CONTENT } from "@/content/pricing";
 import { v4 as uuidv4 } from "uuid";
-import PricingVideo from "@/components/pricing-video";
-import glowingImage from "~/assets/nav-glowing.png";
-import Price from "@/components/price";
-import TitleTicket from "@/components/title-ticket";
-import PricingStar from "@/components/ui/icons/pricing-star";
-import MainCta from "@/components/main-cta";
-import GuaranteeOffer from "@/components/guarantee-offer";
+
+import PricingVideo from "@components/pricing-video";
+import Price from "@components/price";
+import TitleTicket from "@components/title-ticket";
+import PricingStar from "@components/ui/icons/pricing-star";
+import MainCta from "@components/main-cta";
+import GuaranteeOffer from "@components/guarantee-offer";
+
+import brandLogo from "~assets/images/BrandLogo.webp";
+import glowingImage from "~assets/nav-glowing.png";
+
+import { PRICING_CONTENT } from "@content/pricing";
 
 const Pricing = () => {
   const mainContent = PRICING_CONTENT.main;
@@ -17,12 +20,14 @@ const Pricing = () => {
     <section className="section relative flex flex-col gap-14" id="pricing">
       <div className="flex flex-col gap-4 items-center mx-auto text-center">
         <TitleTicket content={PRICING_CONTENT.ticket} />
-        <h2 className="linear-text bg-text text-center font-gedinarone text-h2 max-lg:text-h2-m">
-          {PRICING_CONTENT.title}
-        </h2>
-        <p className="text-light-blue-w1 text-h5 max-lg:text-h5-m font-gedinarone text-center">
-          {PRICING_CONTENT.subtitle}
-        </p>
+        <div className="flex flex-col gap-6">
+          <h2 className="linear-text bg-text text-center font-gedinarone text-h2 max-lg:text-h3">
+            {PRICING_CONTENT.title}
+          </h2>
+          <p className="text-light-blue-w1 text-h5 max-lg:text-body-lg font-gedinarone text-center font-normal">
+            {PRICING_CONTENT.subtitle}
+          </p>
+        </div>
       </div>
       <div
         className="flex justify-between gap-12 pricing-container max-lg:flex-col "

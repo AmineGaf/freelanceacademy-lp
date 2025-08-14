@@ -27,6 +27,7 @@ export default {
         grey: "#9EA3B7",
         "grey-w1": "#C2CAD6",
         "light-blue-w1": "#BBCDE8",
+        "green-w0": "#00FF00",
       },
       backgroundImage: {
         "progress-linear":
@@ -73,168 +74,89 @@ export default {
           "0px 0px 4px 4px rgba(1, 30, 135, 0.25), 0px -10px 40px 0px #101636 inset;",
       },
       fontSize: {
-        h1: [
-          "4rem",
+        // Main headings - Large titles
+        display: [
+          "4rem", // 64px
           {
             lineHeight: "110%",
             fontWeight: 700,
-            letterSpacing: "-1%",
-          },
-        ],
-        h2: [
-          "3rem",
-          {
-            lineHeight: "125%",
-            fontWeight: 700,
-            letterSpacing: "-1%",
-          },
-        ],
-        h3: [
-          "2.25rem",
-          {
-            lineHeight: "125%",
-            fontWeight: 700,
-            letterSpacing: "-0.01%",
-          },
-        ],
-        h4: [
-          "1.5rem",
-          {
-            lineHeight: "130%",
-            fontWeight: 600,
-            letterSpacing: "-1%",
-          },
-        ],
-        h5: [
-          "1.25rem",
-          {
-            lineHeight: "130%",
-            fontWeight: 700,
-            letterSpacing: "-1%",
-          },
-        ],
-        "h1-t": [
-          "3.5rem",
-          {
-            lineHeight: "110%",
-            fontWeight: 700,
-            letterSpacing: "-1%",
-          },
-        ],
-        "h2-t": [
-          "2.5rem",
-          {
-            lineHeight: "125%",
-            fontWeight: 700,
-            letterSpacing: "-1%",
-          },
-        ],
-        "h3-t": [
-          "32px",
-          {
-            lineHeight: "125%",
-            fontWeight: 700,
-            letterSpacing: "-0.32%",
-          },
-        ],
-        "h4-t": [
-          "1.25rem",
-          {
-            lineHeight: "130%",
-            fontWeight: 600,
-            letterSpacing: "-0.2%",
-          },
-        ],
-        "h5-t": [
-          "18px",
-          {
-            lineHeight: "135%",
-            fontWeight: 600,
-          },
-        ],
-        "h1-m": [
-          "3rem",
-          {
-            lineHeight: "110%",
-            fontWeight: 500,
-            letterSpacing: "-0.48px",
-          },
-        ],
-        "h2-m": [
-          "2.25rem",
-          {
-            lineHeight: "125%",
-            fontWeight: 500,
-            letterSpacing: "-0.36px",
-          },
-        ],
-        "h3-m": [
-          "1.5rem",
-          {
-            lineHeight: "125%",
-            fontWeight: 500,
-            letterSpacing: "-0.24px",
-          },
-        ],
-        "h4-m": [
-          "1.25rem",
-          {
-            lineHeight: "130%",
-            fontWeight: 500,
-            letterSpacing: "-0.01%",
-          },
-        ],
-        "h5-m": [
-          "1rem",
-          {
-            lineHeight: "135%",
-            fontWeight: 500,
-            letterSpacing: "-0.01%",
+            letterSpacing: "-0.02em",
           },
         ],
 
-        xl: [
-          "1.25rem",
+        // Section headings - H1, H2
+        h1: [
+          "3rem", // 48px
+          {
+            lineHeight: "120%",
+            fontWeight: 700,
+            letterSpacing: "-0.01em",
+          },
+        ],
+        h2: [
+          "2.25rem", // 36px
+          {
+            lineHeight: "125%",
+            fontWeight: 700,
+            letterSpacing: "-0.01em",
+          },
+        ],
+
+        // Subsection headings - H3, H4
+        h3: [
+          "1.875rem", // 30px
+          {
+            lineHeight: "130%",
+            fontWeight: 600,
+            letterSpacing: "-0.005em",
+          },
+        ],
+        h4: [
+          "1.5rem", // 24px
+          {
+            lineHeight: "130%",
+            fontWeight: 600,
+            letterSpacing: "-0.005em",
+          },
+        ],
+
+        // Small headings - H5
+        h5: [
+          "1.25rem", // 20px
+          {
+            lineHeight: "135%",
+            fontWeight: 600,
+            letterSpacing: "-0.005em",
+          },
+        ],
+
+        // Body text
+        "body-xl": [
+          "1.25rem", // 20px
           {
             lineHeight: "140%",
             fontWeight: 400,
             letterSpacing: "-0.005em",
           },
         ],
-        lg: [
-          "1.125rem",
+        "body-lg": [
+          "1.125rem", // 18px
           {
             lineHeight: "145%",
             fontWeight: 400,
             letterSpacing: "-0.005em",
           },
         ],
-        "md-bold": [
-          "1rem",
+        body: [
+          "1rem", // 16px
           {
-            lineHeight: "135%",
-            fontWeight: 600,
-            letterSpacing: "-0.005em",
-          },
-        ],
-        md: [
-          "1rem",
-          {
-            lineHeight: "135%",
+            lineHeight: "145%",
             fontWeight: 400,
             letterSpacing: "-0.005em",
           },
         ],
-        "sm-bold": [
-          "0.875rem",
-          {
-            lineHeight: "145%",
-            fontWeight: 600,
-            letterSpacing: "-0.005em",
-          },
-        ],
-        sm: [
-          "0.875rem",
+        "body-sm": [
+          "0.875rem", // 14px
           {
             lineHeight: "145%",
             fontWeight: 400,

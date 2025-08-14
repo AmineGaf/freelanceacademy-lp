@@ -7,7 +7,9 @@ const TitleTicket = ({ content }: { content: ReactNode }) => {
         className="w-full py-2 px-8 flex items-center gap-2"
         style={{ background: "#161A20" }}
       >
-        <div className="[&>span]:text-blue-w2">{content}</div>
+        <div className="font-sora [&>span]:text-blue-w2 [&>span]:font-semibold tracking-wider">
+          {content}
+        </div>
         <div className="relative w-4 aspect-square">
           <svg
             xmlns="http://www.w3.org/2000/svg"

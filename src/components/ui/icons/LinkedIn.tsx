@@ -1,5 +1,4 @@
-import type { IGlobalSvgProps } from "@/components/ui/icons/svgTypes";
-
+import type { IGlobalSvgProps } from "@components/ui/icons/svgTypes";
 
 const LinkedIn = ({ width, height }: IGlobalSvgProps) => {
   return (
@@ -11,7 +10,10 @@ const LinkedIn = ({ width, height }: IGlobalSvgProps) => {
       fill="none"
     >
       <circle cx={15} cy={15} r={15} fill="white" />
-      <path d="M8.22178 22.0586H11.3059V12.0742H8.22178V22.0586Z" fill="black" />
+      <path
+        d="M8.22178 22.0586H11.3059V12.0742H8.22178V22.0586Z"
+        fill="black"
+      />
       <path
         d="M7.94141 8.88672C7.94141 9.87109 8.7358 10.668 9.76384 10.668C10.7451 10.668 11.5395 9.87109 11.5395 8.88672C11.5395 7.90234 10.7451 7.05859 9.76384 7.05859C8.7358 7.05859 7.94141 7.90234 7.94141 8.88672Z"
         fill="black"

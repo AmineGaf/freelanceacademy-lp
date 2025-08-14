@@ -1,13 +1,14 @@
-import PHProvider from "@/app/providers/posthog";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+
+import PHProvider from "@app/providers/posthog";
+import Nav from "@sections/nav";
+import Footer from "@sections/footer";
+import NavGlowing from "@components/nav-glowing";
+import FooterGlowing from "@components/footer-glowing";
+
 import "./globals.css";
 import "./embla.css";
-import Nav from "@/sections/nav";
-import Footer from "@/sections/footer";
-import NavGlowing from "@/components/nav-glowing";
-import FooterGlowing from "@/components/footer-glowing";
-import DigitNormalizer from "@/app/providers/digits";
 
 const gedinarone = localFont({
   src: "../../public/assets/fonts/gedinarone.ttf",
@@ -26,6 +27,41 @@ const sora = localFont({
 export const metadata: Metadata = {
   title: "Freelance Academy",
   description: "Freelance Academy Website",
+  icons: {
+    icon: [
+      {
+        url: "/assets/favicon-16x16.png",
+        sizes: "16x16",
+        type: "image/png",
+      },
+      {
+        url: "/assets/favicon-32x32.png",
+        sizes: "32x32",
+        type: "image/png",
+      },
+    ],
+    apple: [
+      {
+        url: "/assets/apple-touch-icon.png",
+        sizes: "180x180",
+        type: "image/png",
+      },
+    ],
+    other: [
+      {
+        rel: "android-chrome-192x192",
+        url: "/assets/android-chrome-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        rel: "android-chrome-512x512",
+        url: "/assets/android-chrome-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -69,7 +105,6 @@ export default function RootLayout({
         className={`${gedinarone.variable} ${sora.variable} antialiased bg-background relative`}
       >
         <PHProvider>
-          <DigitNormalizer />
           <NavGlowing />
           <Nav />
           {children}

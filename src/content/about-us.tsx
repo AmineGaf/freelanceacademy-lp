@@ -1,6 +1,6 @@
-import Investment from "@/components/ui/icons/investment";
-import Profit from "@/components/ui/icons/profit";
-import User from "@/components/ui/icons/user";
+import Investment from "@components/ui/icons/investment";
+import Profit from "@components/ui/icons/profit";
+import User from "@components/ui/icons/user";
 
 export const ABOUTUS_CONTENT = {
   title: (

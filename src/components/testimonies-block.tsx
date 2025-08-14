@@ -1,10 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import Video from "@components/ui/video";
+import RatingStar from "@components/ui/icons/RatingStar";
 
-import Video from "@/components/ui/video";
-import RatingStar from "@/components/ui/icons/RatingStar";
-
-import { TESTIMONY_CONTENT } from "@/content/testimony";
+import { TESTIMONY_CONTENT } from "@content/testimony";
 
 const TestimoniesBlock = () => {
   const testimoniesArray = TESTIMONY_CONTENT.testimony.details;

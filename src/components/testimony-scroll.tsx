@@ -1,9 +1,11 @@
 "use client";
+
 import React, { useRef, useState } from "react";
-import TestimoniesBlock from "@/components/testimonies-block";
 import { useMotionValueEvent, useScroll } from "framer-motion";
-import { TESTIMONY_CONTENT } from "@/content/testimony";
-import TestimonierCard from "@/components/testimonier-card";
+
+import TestimoniesBlock from "@components/testimonies-block";
+import { TESTIMONY_CONTENT } from "@content/testimony";
+import TestimonierCard from "@components/testimonier-card";
 
 const TestimonyScroll = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -36,7 +38,7 @@ const TestimonyScroll = () => {
               }
               key={`card-${index}`}
             />
-          )
+          );
         })}
       </div>
     </div>

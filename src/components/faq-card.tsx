@@ -1,14 +1,15 @@
 "use client";
 import React, { useState } from "react";
-import Card from "@/components/ui/card";
-import { cn } from "@/libs/utils";
 
-interface IFAQCard {
+import Card from "@components/ui/card";
+import { cn } from "@libs/utils";
+
+interface IFaqCard {
   question: React.ReactNode;
   answer: React.ReactNode;
 }
 
-const FaqCard = ({ question, answer }: IFAQCard) => {
+const FaqCard = ({ question, answer }: IFaqCard) => {
   const [toggle, setToggle] = useState<boolean>(false);
   const handleToggle = () => {
     setToggle(!toggle);
@@ -47,7 +48,7 @@ const FaqCard = ({ question, answer }: IFAQCard) => {
               toggle ? " grid-rows-[1fr]" : "grid-rows-[0fr]"
             )}
           >
-            <p className="min-h-0 font-medium text-grey-w1 md:text-lg lg:text-xl antialiased tracking-wide">
+            <p className="min-h-0 font-normal text-grey-w1 text-body-sm md:text-body lg:text-body-lg antialiased tracking-wide">
               {answer}
             </p>
           </div>

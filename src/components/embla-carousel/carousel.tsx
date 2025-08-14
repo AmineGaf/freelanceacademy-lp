@@ -1,22 +1,23 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import { EmblaOptionsType } from "embla-carousel";
-
+import {
+  DotButton,
+  useDotButton,
+} from "@components/embla-carousel/carousel-controls";
+import { v4 as uuidv4 } from "uuid";
+import { TESTIMONY_CONTENT } from "@content/testimony";
+import TestimonierCard from "@components/testimonier-card";
 import useEmblaCarousel from "embla-carousel-react";
-import { DotButton, useDotButton } from "@/components/embla-carousel/carousel-controls";
-import { TESTIMONY_CONTENT } from "@/content/testimony";
-import TestimonierCard from "@/components/testimonier-card";
-import {v4 as uuidv4} from 'uuid'
 
 type PropType = {
-  children: ReactNode;
+  children: React.ReactNode;
   options?: EmblaOptionsType;
 };
 
 const Carousel = ({ children, options }: PropType) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
-  const { selectedIndex, onDotButtonClick } =
-    useDotButton(emblaApi);
+  const { selectedIndex, onDotButtonClick } = useDotButton(emblaApi);
 
   const testimonierArray = TESTIMONY_CONTENT.testimony.users;
 
@@ -30,7 +31,7 @@ const Carousel = ({ children, options }: PropType) => {
               onClick={() => onDotButtonClick(index)}
               className={"embla__dot !w-full max-sm:justify-center".concat(
                 index === selectedIndex ? " embla__dot--selected" : ""
-              ) }
+              )}
             >
               <TestimonierCard
                 avatar={testimonier.avatar}

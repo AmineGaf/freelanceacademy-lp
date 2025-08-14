@@ -1,12 +1,12 @@
 "use client";
 
-import { COURSES_CONTENT } from "@/content/courses";
+import { COURSES_CONTENT } from "@content/courses";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ReactNode, useEffect, useLayoutEffect, useRef, useState } from "react";
 
 import { useMediaQuery } from "react-responsive";
-import { Icons } from "@/components/ui/icons";
-import CourseCard from "@/components/course-card";
+import { Icons } from "@components/ui/icons";
+import CourseCard from "@components/course-card";
 
 const AnimationProgressBar = ({ topGap = 0 }: { topGap: number }) => {
   const progressRef = useRef<HTMLDivElement>(null);
@@ -125,12 +125,14 @@ const Courses = () => {
             ref={titleRef}
           >
             <div className="flex flex-col gap-4 items-center max-w-[41.5625rem] mx-auto text-center">
-              <h2 className="linear-text bg-text text-center font-gedinarone text-h2 max-lg:text-h2-m">
-                {COURSES_CONTENT.title}
-              </h2>
-              <p className="text-light-blue-w1 text-h5 max-lg:text-h5-m font-gedinarone text-center">
-                {COURSES_CONTENT.subtitle}
-              </p>
+              <div className="flex flex-col gap-6">
+                <h2 className="linear-text bg-text text-center font-gedinarone text-h2 max-lg:text-h3">
+                  {COURSES_CONTENT.title}
+                </h2>
+                <p className="text-light-blue-w1 text-h5 max-lg:text-body-lg font-gedinarone text-center font-normal">
+                  {COURSES_CONTENT.subtitle}
+                </p>
+              </div>
             </div>
           </div>
         </div>

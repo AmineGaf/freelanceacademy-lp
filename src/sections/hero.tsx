@@ -1,20 +1,25 @@
-import Video from "@/components/ui/video";
-import { HERO_CONTENT } from "@/content/hero";
 import React from "react";
 import Image from "next/image";
-import thumbnail from "~/assets/images/hero-section/thumbnail.png";
-import MainCta from "@/components/main-cta";
+
+import Video from "@components/ui/video";
+import MainCta from "@components/main-cta";
+
+import thumbnail from "~assets/images/hero-section/thumbnail.png";
+
+import { HERO_CONTENT } from "@content/hero";
 
 const Hero = () => {
   return (
     <section className="pt-0 flex flex-col gap-20">
       <div className="flex flex-col gap-10">
         <div className="max-w-[800px] max-lg:flex-col flex justify-center w-full mx-auto">
-          <div className="text-grey-w0 text-center max-md:text-center [&>span]:text-green-w0 ">
-            <h1 className="linear-text text-[64px] leading-[130%] tracking-[1%] bg-text text-center">
+          <div className="text-grey-w0 text-center max-md:text-center [&>span]:text-green-w0 flex flex-col gap-8">
+            <h1 className="linear-text text-display bg-text text-center">
               {HERO_CONTENT.title}
             </h1>
-            <p className="text-light-blue-w1 text-h5">{HERO_CONTENT.sub}</p>
+            <p className="text-light-blue-w1 text-h5 font-normal">
+              {HERO_CONTENT.sub}
+            </p>
           </div>
         </div>
       </div>

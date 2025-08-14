@@ -1,15 +1,17 @@
-import FeatureCard from "@/components/feature-card";
-import TitleTicket from "@/components/title-ticket";
-import { FEATURES_CONTENT } from "@/content/features";
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
+
+import FeatureCard from "@components/feature-card";
+import TitleTicket from "@components/title-ticket";
+
+import { FEATURES_CONTENT } from "@content/features";
 
 const Features = () => {
   return (
     <section className="flex flex-col gap-14">
       <div className="flex flex-col gap-4 items-center max-w-[41.5625rem] mx-auto text-center">
         <TitleTicket content={FEATURES_CONTENT.ticket} />
-        <h2 className="flex flex-col font-gedinarone text-h2 max-lg:text-h2-m">
+        <h2 className="flex flex-col font-gedinarone text-h2 max-lg:text-h3 gap-6">
           <span className="linear-text bg-text text-center">
             {FEATURES_CONTENT.title.top}
           </span>

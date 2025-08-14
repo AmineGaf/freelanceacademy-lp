@@ -1,7 +1,8 @@
 import React from "react";
-import Card from "@/components/ui/card";
-import { cn } from "@/libs/utils";
-import ContentCheck from "@/components/ui/icons/content-check";
+
+import Card from "@components/ui/card";
+import ContentCheck from "@components/ui/icons/content-check";
+import { cn } from "@libs/utils";
 
 const ContentCard = () => {
   return (

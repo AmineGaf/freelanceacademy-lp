@@ -1,4 +1,16 @@
-import Reveal from "@/animations/reveal";
+import React from "react";
+
+import Reveal from "@animations/reveal";
+
+interface ICourseCard {
+  selected: boolean;
+  index: number;
+  thumbnail: string;
+  title: string;
+  description: string;
+  duration?: React.ReactNode;
+  order: string;
+}
 
 const LinearContainer = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -14,16 +26,6 @@ const LinearContainer = ({ children }: { children: React.ReactNode }) => {
     </div>
   );
 };
-
-interface ICourseCard {
-  selected: boolean;
-  index: number;
-  thumbnail: string;
-  title: string;
-  description: string;
-  duration?: string;
-  order: string;
-}
 
 const CourseCard = (props: ICourseCard) => {
   return (
@@ -44,7 +46,7 @@ const CourseCard = (props: ICourseCard) => {
               width={338}
               height={241}
             />
-            <p className="font-medium text-grey-w1 text-md md:text-xl antialiased tracking-wide">
+            <p className="font-normal text-grey-w1 text-body md:text-body-xl antialiased tracking-wide">
               {props.description}
             </p>
 
@@ -59,9 +61,9 @@ const CourseCard = (props: ICourseCard) => {
           </div>
         </div>
         <div className="relative w-full lg:h-[700px]">
-          <h1 className="top-[50svh] sticky font-gedinarone text-center text-grey-w0 text-h1 max-lg:text-start max-lg:text-h2">
+          <h1 className="top-[50svh] sticky font-gedinarone text-center text-grey-w0 text-h1 max-lg:text-start max-lg:text-h3">
             <span
-              className="text-right font-bold font-sora text-blue-w2 text-[140px] max-lg:text-[64px] tracking-[-1.4px] max-lg:tracking-[-0.6125px] latin-digits"
+              className="text-right font-bold font-sora text-blue-w2 text-[140px] max-lg:text-display tracking-[-1.4px] max-lg:tracking-[-0.02em] latin-digits"
               dir="ltr"
               lang="en"
             >

@@ -1,6 +1,8 @@
-import { cn } from "@/libs/utils"; // Updated import path
-import type { ReactNode } from "react";
 import { cva } from "class-variance-authority";
+
+import type { ReactNode } from "react";
+
+import { cn } from "@libs/utils";
 
 interface IButton {
   className?: string;
@@ -12,7 +14,7 @@ interface IButton {
 }
 
 const buttonVariants = cva(
-  "relative flex justify-center items-center gap-1 px-6 py-3 rounded-full max-lg:w-full h-[54px] hover:opacity-75 text-lg font-bold font-gedinarone text-black/85 leading-6",
+  "relative flex justify-center items-center gap-1 px-6 py-3 rounded-full max-lg:w-full h-[54px] hover:opacity-75 text-body-lg font-bold font-gedinarone text-black/85 leading-6",
   {
     variants: {
       variant: {

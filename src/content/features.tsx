@@ -1,5 +1,7 @@
-import { IAboutUsCard } from "@/components/feature-card";
 import { ReactNode } from "react";
+
+import { IAboutUsCard } from "@components/feature-card";
+
 import support from "~/assets/images/features-section/support.png";
 import security from "~/assets/images/features-section/security.png";
 import live from "~/assets/images/features-section/live.png";
@@ -12,7 +14,11 @@ interface IFeaturesContent {
 }
 
 export const FEATURES_CONTENT: IFeaturesContent = {
-  ticket: <span>Join The Waitlist Today</span>,
+  ticket: (
+    <>
+      Join The <span>Waitlist</span> Today
+    </>
+  ),
   title: {
     top: <>أحسن اختيار كان تحب</>,
     sub: " تتعلم Freelance",

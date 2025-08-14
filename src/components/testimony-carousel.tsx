@@ -1,12 +1,15 @@
 "use client";
+
 import React from "react";
-import { TESTIMONY_CONTENT } from "@/content/testimony";
 import { EmblaOptionsType } from "embla-carousel";
-import Carousel from "@/components/embla-carousel/carousel";
-import RatingStar from "@/components/ui/icons/RatingStar";
-import Video from "@/components/ui/video";
-import Image from "next/image";
 import { v4 as uuidv4 } from "uuid";
+import Image from "next/image";
+
+import Carousel from "@components/embla-carousel/carousel";
+import RatingStar from "@components/ui/icons/RatingStar";
+import Video from "@components/ui/video";
+
+import { TESTIMONY_CONTENT } from "@content/testimony";
 
 const TestimonyCarousel = () => {
   const OPTIONS: EmblaOptionsType = {

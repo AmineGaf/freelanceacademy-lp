@@ -18,9 +18,8 @@ import {
   type Variant,
 } from "framer-motion";
 import { createPortal } from "react-dom";
-import { cn } from "@/libs/utils";
-import useClickOutside from "@/hooks/use-click-outside";
-
+import { cn } from "@libs/utils";
+import useClickOutside from "@hooks/use-click-outside";
 
 interface DialogContextType {
   isOpen: boolean;
@@ -116,7 +115,7 @@ function DialogTrigger({
       aria-expanded={isOpen}
       aria-controls={`dialog-content-${uniqueId}`}
       transition={{
-        duration: 0
+        duration: 0,
       }}
     >
       {children}
@@ -361,10 +360,9 @@ function DialogVideo({ code, className, style, horizontal }: DialogVideoProps) {
   const { uniqueId } = useDialog();
   const [loadStatus, setLoadStatus] = useState(false);
 
-
   useEffect(() => {
-    console.log(loadStatus)
-  },[loadStatus])
+    console.log(loadStatus);
+  }, [loadStatus]);
 
   return (
     <motion.div
