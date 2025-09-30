@@ -60,6 +60,27 @@ export const PRICING_CONTENT = {
       },
     ],
   },
+  form: {
+    title: "فاش تستنا؟",
+    subtitle: "سجل تو بش تحصل على تخفيض قيمتو 740 د.ت ",
+    items: [
+      {
+        label: "اسمك الكامل",
+        value: "fullname",
+        type: "text",
+      },
+      {
+        label: "بريدك الالكتروني",
+        value: "email",
+        type: "email",
+      },
+      {
+        label: "رقم هاتفك",
+        value: "phone",
+        type: "string",
+      },
+    ],
+  },
   video: {
     title: "عندك أسئلة؟ خلينا نحكيو.",
     sub: "فريق الدعم متاعنا موجود في أي وقت.",

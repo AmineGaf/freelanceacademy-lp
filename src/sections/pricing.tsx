@@ -13,6 +13,7 @@ import brandLogo from "~assets/images/BrandLogo.webp";
 import glowingImage from "~assets/nav-glowing.png";
 
 import { PRICING_CONTENT } from "@content/pricing";
+import Link from "next/link";
 
 const Pricing = () => {
   const mainContent = PRICING_CONTENT.main;
@@ -78,12 +79,12 @@ const Pricing = () => {
                 </ul>
               </div>
               <div className="flex flex-col gap-4 items-start">
-                <a
+                <Link
                   className="flex gap-4 max-lg:w-full max-lg:flex-col"
-                  href="https://wa.me/21693912041?text=عسلامة، نحب نسجل في الأكاديمي "
+                  href="/submission-form"
                 >
                   <MainCta />
-                </a>
+                </Link>
                 <GuaranteeOffer />
               </div>
             </div>

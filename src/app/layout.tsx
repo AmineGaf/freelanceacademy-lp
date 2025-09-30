@@ -1,14 +1,14 @@
+
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import PHProvider from "@app/providers/posthog";
-import Nav from "@sections/nav";
-import Footer from "@sections/footer";
-import NavGlowing from "@components/nav-glowing";
-import FooterGlowing from "@components/footer-glowing";
+
 
 import "./globals.css";
 import "./embla.css";
+import ClientLayout from "./client-layout";
 
 const gedinarone = localFont({
   src: "../../public/assets/fonts/gedinarone.ttf",
@@ -106,6 +106,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
+
+  
   return (
     <html lang="en" dir="rtl">
       <head>
@@ -142,11 +146,7 @@ export default function RootLayout({
         className={`${gedinarone.variable} ${sora.variable} antialiased bg-background relative`}
       >
         <PHProvider>
-          <NavGlowing />
-          <Nav />
-          {children}
-          <Footer />
-          <FooterGlowing />
+        <ClientLayout>{children}</ClientLayout>
         </PHProvider>
       </body>
     </html>
