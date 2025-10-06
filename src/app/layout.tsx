@@ -113,7 +113,6 @@ export default function RootLayout({
   return (
     <html lang="en" dir="rtl">
       <head>
-        {/* Meta Pixel Code */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -126,7 +125,7 @@ export default function RootLayout({
               s.parentNode.insertBefore(t,s)}(window, document,
               'script',
               'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '668538532566082');
+              fbq('init', '785636104090927');
               fbq('track', 'PageView');
             `,
           }}
@@ -136,11 +135,10 @@ export default function RootLayout({
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=668538532566082&ev=
+            src="https://www.facebook.com/tr?id=785636104090927&ev=
             PageView&noscript=1"
           />
         </noscript>
-        {/* End Meta Pixel Code */}
       </head>
       <body
         className={`${gedinarone.variable} ${sora.variable} antialiased bg-background relative`}
