@@ -31,7 +31,7 @@ export interface ITestimonier {
 
 export const TESTIMONY_CONTENT = {
   ticket: "Testimonials",
-  title: "تسمعش كلامنا، اسمع كلام الشبيبة لي بدت",
+  title: "تسمعش كلامنا، اسمع كلام الشبيبة لي بدات",
   subtitle: "",
   testimony: {
     users: [

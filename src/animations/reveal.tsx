@@ -53,7 +53,7 @@ const Reveal = (props: RevealProps) => {
   const mainControls = useAnimation();
   useEffect(() => {
     if (isInView) mainControls.start("visible");
-  }, [isInView]);
+  }, [isInView, mainControls]);
 
   return (
     <motion.div

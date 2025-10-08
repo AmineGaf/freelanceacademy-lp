@@ -3,9 +3,6 @@ import posthog from "posthog-js";
 import { PostHogProvider } from "posthog-js/react";
 import { useState } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import dynamic from "next/dynamic";
-
-const PixelTracker = dynamic(() => import("./meta"), { ssr: false });
 
 // if (typeof window !== "undefined") {
 //   posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY || "", {
@@ -24,7 +21,6 @@ export default function PHProvider({
     <div>
       <PostHogProvider client={posthog}>
         <QueryClientProvider client={queryClient}>
-          <PixelTracker />
           {children}
         </QueryClientProvider>
       </PostHogProvider>

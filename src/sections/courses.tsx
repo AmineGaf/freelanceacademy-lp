@@ -13,24 +13,26 @@ const AnimationProgressBar = ({ topGap = 0 }: { topGap: number }) => {
   const [progressFullLength, setProgressFullLength] = useState(0);
 
   useLayoutEffect(() => {
+    const currentRef = progressRef.current;
+    
     const handleResize = () => {
-      if (progressRef.current) {
-        const progressClientRect = progressRef.current.getBoundingClientRect();
+      if (currentRef) {
+        const progressClientRect = currentRef.getBoundingClientRect();
         setProgressFullLength(progressClientRect.height);
       }
     };
 
     const resizeObserver = new ResizeObserver(handleResize);
-    if (progressRef.current) {
-      resizeObserver.observe(progressRef.current);
+    if (currentRef) {
+      resizeObserver.observe(currentRef);
     }
     handleResize();
     return () => {
-      if (progressRef.current) {
-        resizeObserver.unobserve(progressRef.current);
+      if (currentRef) {
+        resizeObserver.unobserve(currentRef);
       }
     };
-  }, [progressRef.current]);
+  }, []);
 
   // Simple progress within the bar itself
   const { scrollYProgress } = useScroll({
@@ -113,7 +115,7 @@ const Courses = () => {
       const height = titleRef.current.getBoundingClientRect().height;
       setTitleHeight(height + 96);
     }
-  });
+  }, []);
 
   return (
     <section className="flex flex-col gap-14 p-0 !max-w-full relative h-full">

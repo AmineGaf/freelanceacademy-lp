@@ -1,8 +1,9 @@
-import courseOne from "~/assets/images/courses-section/course_1.webp";
+import courseOne from "~/assets/images/courses-section/course_1.png";
 import courseTwo from "~/assets/images/courses-section/course_2.webp";
-import courseThree from "~/assets/images/courses-section/course_3.webp";
+import courseThree from "~/assets/images/courses-section/course_3.png";
 import courseFour from "~/assets/images/courses-section/course_4.webp";
-import surprise from "~/assets/images/courses-section/surprise.webp";
+import courseFive from "~/assets/images/courses-section/course_5.png";
+import courseSix from "~/assets/images/courses-section/course_6.png";
 
 export const COURSES_CONTENT = {
   title: "شنوا بش نتعلم؟",
@@ -61,10 +62,34 @@ export const COURSES_CONTENT = {
       ),
     },
     {
-      order: "مفاجأة",
-      thumbnail: surprise,
-      title: "Secret Bonus",
-      description: "",
+      order: "الدورة الخامسة",
+      thumbnail: courseFive,
+      title: "Winner's Mindset",
+      description:
+        "دورة تساعدك على بناء عقلية النمو، تعزيز الثقة والانضباط، فهم قوة علم الأعصاب، واتخاذ خطوات عملية نحو النجاح. رحلة عملية لتطوير صورتك الذاتية واكتشاف العملية الحقيقية للوصول إلى أهدافك.",
+      duration: (
+        <>
+          <span className="font-sora">3</span> ساعات
+        </>
+      ),
     },
+    {
+      order: "الدورة السادسة",
+      thumbnail: courseSix,
+      title: "Scale Mastery",
+      description:
+        " Scale Mastery دورة عملية تنقلك من مجرد فريلانسر إلى صاحب وكالة متكاملة. ستتعلم كيف تغيّر عاداتك وتبني أنظمة قوية، تجذب العملاء عبر استراتيجيات فعّالة، وتفوض العمل من خلال التوظيف الذكي. خطوة بخطوة، ستكتشف كيف تنتقل من العمل الفردي إلى بناء فريق، تطوير عادات قيادية، وصناعة علامة تجارية قوية تثبت حضورك في السوق.",
+      duration: (
+        <>
+          <span className="font-sora">3</span> ساعات
+        </>
+      ),
+    },
+    // {
+    //   order: "مفاجأة",
+    //   thumbnail: surprise,
+    //   title: "Secret Bonus",
+    //   description: "",
+    // },
   ],
 };
