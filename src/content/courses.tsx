@@ -1,5 +1,5 @@
 import courseOne from "~/assets/images/courses-section/course_1.png";
-import courseTwo from "~/assets/images/courses-section/course_2.webp";
+import courseTwo from "~/assets/images/courses-section/course_2.png";
 import courseThree from "~/assets/images/courses-section/course_3.png";
 import courseFour from "~/assets/images/courses-section/course_4.webp";
 import courseFive from "~/assets/images/courses-section/course_5.png";
