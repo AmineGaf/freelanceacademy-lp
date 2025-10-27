@@ -13,8 +13,8 @@ import { TESTIMONY_CONTENT } from "@content/testimony";
 const Testimony = () => {
   const { isTablet } = useWindowSize();
   return (
-    <section className="flex flex-col gap-14">
-      <div className="flex flex-col gap-4 items-center max-w-[41.5625rem] mx-auto text-center">
+    <section className="flex flex-col gap-14 text-gray-100">
+      <div className="flex flex-col gap-4 items-center max-w-[41.5625rem] mx-auto text-center text-gray-100">
         <TitleTicket content={TESTIMONY_CONTENT.ticket} />
         <div className="flex flex-col gap-6">
           <h2 className="linear-text bg-text text-center font-gedinarone text-h2 max-lg:text-h3">

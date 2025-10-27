@@ -31,7 +31,7 @@ const TestimonyCarousel = () => {
               </div>
               {testimonies.thumbnail && testimonies.videoCode ? (
                 <>
-                  <span className="text-grey-w0 text-h3 text-left">
+                  <span className="text-gray-100 text-h3 text-left">
                     {testimonies.vidTitle}
                   </span>
                   <Video videoCode={testimonies.videoCode} className="w-full">
@@ -46,7 +46,7 @@ const TestimonyCarousel = () => {
                   </Video>
                 </>
               ) : (
-                <p dir="ltr" className="font-gedinarone text-grey-w0 text-h3">
+                <p dir="ltr" className="font-gedinarone text-gray-100 text-h3">
                   {testimonies.quote}
                 </p>
               )}

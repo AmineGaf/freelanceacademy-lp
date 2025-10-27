@@ -8,7 +8,7 @@ import Updates from "@components/ui/icons/updates";
 const Guarantee = () => {
   return (
     <section className="pt-0">
-      <div className="shadow-guarantee grid lg:grid-cols-4 sm:grid-cols-2 px-4 gap-4 rounded-3xl border border-blue-w1">
+      <div className="shadow-guarantee grid lg:grid-cols-4 text-gray-100 sm:grid-cols-2 px-4 gap-4 rounded-3xl border border-blue-w1">
         <div className="w-full flex items-center justify-center gap-3 px-4 py-10 text-body-lg">
           <span>شراء آمن</span>
           <Fast />

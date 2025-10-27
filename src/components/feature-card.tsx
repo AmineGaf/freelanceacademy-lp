@@ -23,7 +23,7 @@ const FeatureCard = ({ image, title, desc, grid }: IAboutUsCard) => {
       <div className="w-full h-full bg-feature-card flex justify-center items-center max-h-[18.75rem] overflow-hidden">
         <Image height={400} width={600} src={image} alt={""} />
       </div>
-      <h4>{title}</h4>
+      <h4 className="text-gray-100 text-center">{title}</h4>
       <p className="text-center text-grey font-normal">{desc}</p>
     </Card>
   );

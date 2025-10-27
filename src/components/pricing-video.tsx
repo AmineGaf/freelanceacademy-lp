@@ -20,7 +20,7 @@ const PricingVideo = () => {
         <h3 className="text-white font-gedinarone">{videoContent.title}</h3>
         <p className="text-grey-w1 font-normal">{videoContent.sub}</p>
       </div>
-      <div className="flex flex-col gap-6 grayscale">
+      <div className="flex flex-col gap-6 grayscale text-gray-300">
         <Video videoCode={"6685c51d70a16ee4eb210343"} horizontal>
           <Image
             src={pricingThumnail}

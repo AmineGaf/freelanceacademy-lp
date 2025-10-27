@@ -18,7 +18,7 @@ const AboutUsCard = ({ icon, title, desc }: IAboutUsCard) => {
       >
         {icon}
       </div>
-      <h4 className="text-center">{title}</h4>
+      <h4 className="text-center text-gray-100">{title}</h4>
       <p className="text-center text-grey font-normal">{desc}</p>
     </Card>
   );

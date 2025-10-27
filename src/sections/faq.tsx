@@ -9,7 +9,7 @@ import { FAQ_CONTENT } from "@content/faq";
 const Faq = () => {
   const FAQArray = FAQ_CONTENT.items;
   return (
-    <section className="flex flex-col gap-14">
+    <section className="flex flex-col gap-14 text-gray-100">
       <div className="flex flex-col gap-4 items-center max-w-[41.5625rem] mx-auto text-center">
         <TitleTicket content={FAQ_CONTENT.ticket} />
         <div className="flex flex-col gap-6">

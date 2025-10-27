@@ -31,14 +31,14 @@ const CourseCard = (props: ICourseCard) => {
   return (
     <Reveal>
       <div
-        className={`flex justify-between lg:gap-[128px] min-h-[840px] items-center py-24 max-lg:flex-col-reverse max-lg:items-end max-lg:pl-4  ${
+        className={`flex justify-between text-gray-100 lg:gap-[128px] min-h-[840px] items-center py-24 max-lg:flex-col-reverse max-lg:items-end max-lg:pl-4  ${
           props.selected ? "opacity-100" : "opacity-40"
         }`}
         dir="rtl"
       >
         <div className="flex justify-start w-full">
           <div className="text-right flex flex-col items-start gap-[24px] max-w-[480px]">
-            <h4 className="text-grey-w0 text-h4">{props.title}</h4>
+            <h4 className="text-gray-300 text-h4">{props.title}</h4>
             <img
               src={props.thumbnail}
               alt={props.title}

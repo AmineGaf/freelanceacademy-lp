@@ -19,7 +19,7 @@ const Pricing = () => {
   const mainContent = PRICING_CONTENT.main;
   return (
     <section className="section relative flex flex-col gap-14" id="pricing">
-      <div className="flex flex-col gap-4 items-center mx-auto text-center">
+      <div className="flex flex-col gap-4 items-center mx-auto text-center text-gray-100">
         <TitleTicket content={PRICING_CONTENT.ticket} />
         <div className="flex flex-col gap-6">
           <h2 className="linear-text bg-text text-center font-gedinarone text-h2 max-lg:text-h3">
