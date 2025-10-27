@@ -20,13 +20,13 @@ const Page = () => {
       <div className="w-full max-w-6xl mb-6 flex justify-end">
         <Link
           href="/"
-          className="px-4 py-2 rounded-xl text-sm font-medium bg-dark-blue text-grey-w0 hover:bg-blue-w3 transition-colors"
+          className="px-4 py-2 rounded-xl text-sm font-medium text-gray-200 bg-dark-blue hover:bg-blue-w3 transition-colors"
         >
           العودة إلى الصفحة الرئيسية
         </Link>
       </div>
 
-      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-9 gap-10">
+      <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-9 gap-10 text-gray-200">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
