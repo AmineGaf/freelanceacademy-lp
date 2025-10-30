@@ -39,6 +39,7 @@ const CourseCard = (props: ICourseCard) => {
         <div className="flex justify-start w-full">
           <div className="text-right flex flex-col items-start gap-[24px] max-w-[480px]">
             <h4 className="text-gray-300 text-h4">{props.title}</h4>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={props.thumbnail}
               alt={props.title}
