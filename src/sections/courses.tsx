@@ -149,6 +149,7 @@ const Courses = () => {
                 description={element.description}
                 duration={element.duration}
                 order={element.order}
+                isPremium={element.isPremium}
                 key={`${index}-${element.order}`}
               />
             );

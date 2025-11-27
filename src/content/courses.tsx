@@ -13,6 +13,7 @@ export const COURSES_CONTENT = {
     {
       order: "الدورة الأولى",
       thumbnail: courseOne,
+      isPremium: false,
       title: "Freelance Mastery",
       description:
         "دورة شاملة للعمل الحر تشمل المهارات الأساسية، بناء العقلية، تقنيات البيع، الدفع، وتحسين تقديم الخدمات. تعلم كيفية التوسع وتطوير عملك بنجاح.",
@@ -26,6 +27,7 @@ export const COURSES_CONTENT = {
     {
       order: "الدورة الثانية",
       thumbnail: courseTwo,
+      isPremium: false,
       title: "Content Craft",
       description:
         "Course تعلمك صناعة المحتوى ,كيفاش تعمل اول فيديو حتى بتاليفون, كيفاش تنجم تستغلها ك Freelancer و كيفاش حتى تجيب برشا Views",
@@ -39,6 +41,7 @@ export const COURSES_CONTENT = {
     {
       order: "الدورة الثالثة",
       thumbnail: courseFour,
+      isPremium: false,
       title: "Shorts Playbook",
       description:
         "تحب تتعلم Editing كما فديوات قصي بضبط ؟ سيف و قصي بش يعلموك من صفر كيفاش تنجم تمنتج فديوات بجودة عالية و كيفاش حتى تسوق المهارة هذي.",
@@ -51,6 +54,7 @@ export const COURSES_CONTENT = {
     },
     {
       order: "الدورة الرابعة",
+      isPremium: false,
       thumbnail: courseThree,
       title: "Meta School",
       description:
@@ -64,6 +68,7 @@ export const COURSES_CONTENT = {
     {
       order: "الدورة الخامسة",
       thumbnail: courseFive,
+      isPremium: false,
       title: "Winner's Mindset",
       description:
         "دورة تساعدك على بناء عقلية النمو، تعزيز الثقة والانضباط، فهم قوة علم الأعصاب، واتخاذ خطوات عملية نحو النجاح. رحلة عملية لتطوير صورتك الذاتية واكتشاف العملية الحقيقية للوصول إلى أهدافك.",
@@ -75,6 +80,7 @@ export const COURSES_CONTENT = {
     },
     {
       order: "الدورة السادسة",
+      isPremium: true,
       thumbnail: courseSix,
       title: "Scale Mastery",
       description:
