@@ -1,11 +1,11 @@
 import testimonierOne from "~/assets/images/testimony-section/Seifeddine Chettaoui.jpg";
 import thumbnailOne from "~/assets/images/testimony-section/Seifeddine Chettaoui Thumbnail.png";
-import testimonierTwo from "~/assets/images/testimony-section/Taki.png";
-import thumbnailTwo from "~/assets/images/testimony-section/Taki Thumbnail.png";
-import testimonierThree from "~/assets/images/testimony-section/Intidhar Ben Mrad.png";
-import thumbnailThree from "~/assets/images/testimony-section/Intidhar Ben Mrad Thumbnail.png";
-import testimonierFour from "~/assets/images/testimony-section/Amine.png";
-import thumbnailFour from "~/assets/images/testimony-section/Amine Thumbnail.png";
+import testimonierTwo from "~/assets/images/testimony-section/taher-avatar.png";
+import thumbnailTwo from "~/assets/images/testimony-section/taher-thumb.png";
+import testimonierThree from "~/assets/images/testimony-section/youssef-avatar.jpg";
+import thumbnailThree from "~/assets/images/testimony-section/youssef-thumbnail.png";
+import testimonierFour from "~/assets/images/testimony-section/achreb-avatar.jpg";
+import thumbnailFour from "~/assets/images/testimony-section/ahcref-thumb.png";
 import {
   StaticImageData,
   StaticImport,
@@ -38,26 +38,26 @@ export const TESTIMONY_CONTENT = {
       {
         avatar: testimonierOne,
         name: "سيف الدين الشتاوي",
-        age: <span className="font-sora">18</span>,
-        income: <span className="font-sora">3000</span>,
+        // age: <span className="font-sora">18</span>,
+        // income: <span className="font-sora">3000</span>,
       },
       {
         avatar: testimonierTwo,
-        name: "تقي الزيتوني",
-        age: <span className="font-sora">20</span>,
-        income: <span className="font-sora">2000</span>,
+        name: "محمد طاهر الجويني ",
+        // age: <span className="font-sora">20</span>,
+        // income: <span className="font-sora">2000</span>,
       },
       {
         avatar: testimonierThree,
-        name: "إنتظار بن مراد",
-        age: <span className="font-sora">27</span>,
-        income: <span className="font-sora">1000</span>,
+        name: "يوسف عمري ",
+        // age: <span className="font-sora">27</span>,
+        // income: <span className="font-sora">1000</span>,
       },
       {
         avatar: testimonierFour,
-        name: "محمد أمين",
-        age: <span className="font-sora">20</span>,
-        income: <span className="font-sora">1000</span>,
+        name: "أشرف ",
+        // age: <span className="font-sora">20</span>,
+        // income: <span className="font-sora">1000</span>,
       },
     ] as ITestimonier[],
     details: [
@@ -70,22 +70,22 @@ export const TESTIMONY_CONTENT = {
       {
         thumbnail: thumbnailTwo,
         vidTitle:
-          "كي خذيت الدورة ماشي فيبالي بروحي مقدم ياخي طلعت فاهم 1 بالمئة و ما نعرف شيئ",
+          "ما كنتش نتصور اللي بش نلقا ه\ا الكل في freelance academy",
         rating: 5,
-        videoCode: "67e524bfefb96565b074a29c",
+        videoCode: "6977eb1411ec7dfcb9605147",
       },
       {
         thumbnail: thumbnailThree,
         vidTitle:
-          "اللي قريتو 3 سنين في الجامعة في فرانسا مافادنيش قد ما فادوني الدورات",
+          "زجعت حق ال formation من أول client",
         rating: 5,
-        videoCode: "67e524bf8331a289e34485ae",
+        videoCode: "6977eb14c2fb61ce19195652",
       },
       {
         thumbnail: thumbnailFour,
-        vidTitle: "بش يعلمك حاجات حتى و انت مكش فايق اللي تتعلم فاهم",
+        vidTitle: "ال formation استثمار كاينك خذيت قطعة أرض و قاعد يطلع سومها",
         rating: 5,
-        videoCode: "67e57ca1403562dbea691366",
+        videoCode: "697a4a772e22890817f66579",
       },
     ] as ITestimonyDetails[],
   },

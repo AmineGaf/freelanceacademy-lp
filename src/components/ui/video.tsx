@@ -16,7 +16,7 @@ import Card from "@components/ui/card";
 
 interface IVideoPlayer {
   className?: string;
-  children: ReactNode;
+  children?: ReactNode;
   videoCode: string;
   horizontal?: boolean;
 }
@@ -27,6 +27,10 @@ const video = ({
   videoCode,
   horizontal,
 }: IVideoPlayer) => {
+  const thumbnailContent = children ?? (
+    <div className="w-full aspect-video bg-gray-800/80 rounded-rounded" aria-hidden />
+  );
+
   return (
     <Dialog
       transition={{
@@ -41,7 +45,7 @@ const video = ({
               <PlayIcon />
             </div>
             <div className="rounded-rounded w-full h-full absolute left-0 top-0 bg-video-gradiant" />
-            {children}
+            {thumbnailContent}
           </div>
         </Card>
       </DialogTrigger>

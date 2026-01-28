@@ -18,14 +18,14 @@ const TestimonierCard = (props: ITestimonier) => {
       key={uuidv4()}
     >
       <div className="rounded-full w-12 h-12 overflow-hidden shadow-testimonier border-2 border-solid border-transparent">
-        <Image src={props.avatar} alt={props.name} width={400} height={400} />
+        <Image src={props.avatar} alt={props.name} width={500} height={500} />
       </div>
       <div className="text-right font-normal text-gray-100 lg:text-body-lg max-sm:text-body-sm">
         <b>{props.name}</b> - {props.age} عام
       </div>
-      <h4 className="text-right max-lg:text-center linear-text bg-testimony-text">
+      {/* <h4 className="text-right max-lg:text-center linear-text bg-testimony-text">
         {props.income} د.ت / شهر
-      </h4>
+      </h4> */}
     </div>
   );
 };

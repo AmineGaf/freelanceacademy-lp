@@ -17,20 +17,22 @@ const TestimoniesBlock = () => {
                 return <RatingStar key={`star-${index}-${starIndex}`} />;
               })}
             </div>
-            {testimonies.thumbnail && testimonies.videoCode ? (
+            {testimonies.videoCode ? (
               <>
                 <span className="text-grey-w0 text-h3 text-left">
                   {testimonies.vidTitle}
                 </span>
                 <Video videoCode={testimonies.videoCode} className="w-full">
-                  <Image
-                    src={testimonies.thumbnail}
-                    alt="thumbnail"
-                    width="814"
-                    height="470"
-                    className=" w-full"
-                    loading="eager"
-                  />
+                  {testimonies.thumbnail ? (
+                    <Image
+                      src={testimonies.thumbnail}
+                      alt="thumbnail"
+                      width="814"
+                      height="470"
+                      className=" w-full"
+                      loading="eager"
+                    />
+                  ) : undefined}
                 </Video>
               </>
             ) : (
