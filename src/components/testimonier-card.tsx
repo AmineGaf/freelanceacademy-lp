@@ -21,7 +21,7 @@ const TestimonierCard = (props: ITestimonier) => {
         <Image src={props.avatar} alt={props.name} width={500} height={500} />
       </div>
       <div className="text-right font-normal text-gray-100 lg:text-body-lg max-sm:text-body-sm">
-        <b>{props.name}</b> - {props.age} عام
+        <b>{props.name}</b> 
       </div>
       {/* <h4 className="text-right max-lg:text-center linear-text bg-testimony-text">
         {props.income} د.ت / شهر
