@@ -6,6 +6,12 @@ import testimonierThree from "~/assets/images/testimony-section/youssef-avatar.j
 import thumbnailThree from "~/assets/images/testimony-section/youssef-thumbnail.png";
 import testimonierFour from "~/assets/images/testimony-section/achreb-avatar.jpg";
 import thumbnailFour from "~/assets/images/testimony-section/ahcref-thumb.png";
+import thumbnailFive from "~/assets/images/testimony-section/nizar-testimony.png";
+import thumbnailSix from "~/assets/images/testimony-section/khadija-thumb.png";
+import thumbnailEight from "~/assets/images/testimony-section/ahmed-thumb.png";
+import thumbnailSeven from "~/assets/images/testimony-section/taki-thumb.png";
+import testimonierFive from "~/assets/images/testimony-section/Intidhar Ben Mrad.png";
+
 import {
   StaticImageData,
   StaticImport,
@@ -18,7 +24,7 @@ export interface ITestimonyDetails {
   income?: ReactNode;
   rating?: number;
   quote?: ReactNode;
-  vidTitle?: string;
+  vidTitle?: ReactNode;
   videoCode?: string;
 }
 export interface ITestimonier {
@@ -35,6 +41,12 @@ export const TESTIMONY_CONTENT = {
   subtitle: "",
   testimony: {
     users: [
+      {
+        avatar: testimonierFour,
+        name: "taki zitoui",
+        // age: <span className="font-sora">20</span>,
+        // income: <span className="font-sora">1000</span>,
+      },
       {
         avatar: testimonierOne,
         name: "سيف الدين الشتاوي",
@@ -61,12 +73,30 @@ export const TESTIMONY_CONTENT = {
       },
       {
         avatar: testimonierFour,
-        name: "نزار ",
+        name: "نزار غودي",
+        // age: <span className="font-sora">20</span>,
+        // income: <span className="font-sora">1000</span>,
+      },
+      {
+        avatar: testimonierFive,
+        name: "خديجة نوري",
+        // age: <span className="font-sora">20</span>,
+        // income: <span className="font-sora">1000</span>,
+      },
+      {
+        avatar: testimonierFour,
+        name: "أحمد",
         // age: <span className="font-sora">20</span>,
         // income: <span className="font-sora">1000</span>,
       },
     ] as ITestimonier[],
     details: [
+      {
+        thumbnail: thumbnailSeven,
+        vidTitle: <>سكرت <span className="font-sora">8</span> ملاين في نهارين و الشهر هذا فما <span className="font-sora">16</span> مليون</>,
+        rating: 5,
+        videoCode: "69a3555fe9610ba04eb25ef6",
+      },
       {
         thumbnail: thumbnailOne,
         vidTitle: "نتعلم و نطبق, و مالشهرالأول رجعت فلوس الدورات اربعة مرات",
@@ -94,10 +124,23 @@ export const TESTIMONY_CONTENT = {
         videoCode: "697a4a772e22890817f66579",
       },
       {
-        thumbnail: thumbnailFour,
-        vidTitle: "ال formation استثمار كاينك خذيت قطعة أرض و قاعد يطلع سومها",
+        thumbnail: thumbnailFive,
+        vidTitle: "تعلمت كيفاه نجيب حرفاء باستراتيجي معينة",
         rating: 5,
-        videoCode: "697a4a772e22890817f66579",
+        videoCode: "69a3546e98dac99517825a48",
+      },
+      {
+        thumbnail: thumbnailSix,
+        vidTitle: "برشا منفعة في الأكاديمي ديما نتفرج كل مانحس روحي ضايعة",
+        rating: 5,
+        videoCode: "69a35500e9610ba04eb256dd",
+      },
+      
+      {
+        thumbnail: thumbnailEight,
+        vidTitle: "الحقيقة عاونتي برشا و كان فما متابعة معايا حتى كان انت مش في تونس",
+        rating: 5,
+        videoCode: "69a35508e9610ba04eb257ab",
       },
     ] as ITestimonyDetails[],
   },
