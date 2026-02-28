@@ -5,6 +5,7 @@ import Nav from "@sections/nav";
 import Footer from "@sections/footer";
 import NavGlowing from "@components/nav-glowing";
 import FooterGlowing from "@components/footer-glowing";
+import PromoBar from "@components/promo-bar";
 
 export default function ClientLayout({
   children,
@@ -18,6 +19,7 @@ export default function ClientLayout({
     <>
       {!isFormPage && (
         <>
+          <PromoBar />
           <NavGlowing />
           <Nav />
         </>

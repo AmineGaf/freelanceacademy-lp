@@ -7,6 +7,7 @@ import Guarantee from "@sections/guarantee";
 import Hero from "@sections/hero";
 import Pricing from "@sections/pricing";
 import Testimony from "@sections/testimony";
+import TestimonyScreenshots from "@sections/testimony-screenshots";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Courses />
       </div>
       <Testimony />
+      <TestimonyScreenshots />
       <Pricing />
       <Faq />
     </div>

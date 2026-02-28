@@ -59,6 +59,12 @@ export const TESTIMONY_CONTENT = {
         // age: <span className="font-sora">20</span>,
         // income: <span className="font-sora">1000</span>,
       },
+      {
+        avatar: testimonierFour,
+        name: "نزار ",
+        // age: <span className="font-sora">20</span>,
+        // income: <span className="font-sora">1000</span>,
+      },
     ] as ITestimonier[],
     details: [
       {
@@ -80,6 +86,12 @@ export const TESTIMONY_CONTENT = {
           "زجعت حق ال formation من أول client",
         rating: 5,
         videoCode: "6977eb14c2fb61ce19195652",
+      },
+      {
+        thumbnail: thumbnailFour,
+        vidTitle: "ال formation استثمار كاينك خذيت قطعة أرض و قاعد يطلع سومها",
+        rating: 5,
+        videoCode: "697a4a772e22890817f66579",
       },
       {
         thumbnail: thumbnailFour,

@@ -16,7 +16,7 @@ interface IFeaturesContent {
 export const FEATURES_CONTENT: IFeaturesContent = {
   ticket: (
     <>
-      Join The <span>Waitlist</span> Today
+      tasjil bch <span>ysakr </span> ala qrib
     </>
   ),
   title: {

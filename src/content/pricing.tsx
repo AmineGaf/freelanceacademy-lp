@@ -19,7 +19,7 @@ export const PRICING_CONTENT = {
       {
         content: (
           <>
-            <b>6 دورات معمّقة:</b> باش تولّي محترف في الفريلانس من الصفر حتى
+            <b><span className="font-sora">6</span> دورات معمّقة:</b> باش تولّي محترف في الفريلانس من الصفر حتى
             المستوى المتقدّم.{" "}
             <span>
               (القيمة: <span className="font-sora">1,250</span>DT)
@@ -30,7 +30,7 @@ export const PRICING_CONTENT = {
       {
         content: (
           <>
-            <b>دعم واتساب 24/7 من الخبراء:</b>مساعدة حقيقية في أي وقت.
+            <b>دعم واتساب <span className="font-sora">24/7</span> من الخبراء:</b>مساعدة حقيقية في أي وقت.
             <span>
               (القيمة: <span className="font-sora">750</span>DT/السنة)
             </span>
