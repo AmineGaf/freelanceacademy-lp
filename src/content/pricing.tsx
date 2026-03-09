@@ -12,7 +12,7 @@ export const PRICING_CONTENT = {
     ),
     to: (
       <>
-        <span className="font-sora">297</span> د.ت
+        <span className="font-sora">247</span> د.ت
       </>
     ),
     items: [

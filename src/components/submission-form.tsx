@@ -22,6 +22,17 @@ const SubmissionForm = () => {
       form_data: JSON.stringify(data),
     });
 
+    // Save to Baserow in the background (non-blocking)
+    fetch("/api/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        full_name: data.fullname,
+        email: data.email,
+        phone: data.phone,
+      }),
+    }).catch(() => {});
+
     const phone = "21693912041";
     let message = "عسلامة، نحب نسجل في الأكاديمي\n\n";
     for (const item of formContent.items) {
